@@ -11,8 +11,6 @@ SDL2_gfx
 
 # building
 
-git clone https://github.com/ahmetemregurdal/pong-cpp
-cd pong-cpp
-g++ -lSDL2 -lSDL2_gfx -lSDL2_ttf -lSDL2_mixer main.cpp -o pong-cpp
+git clone https://github.com/ahmetemregurdal/pong-cpp && cd pong-cpp && g++ -lSDL2 -lSDL2_gfx -lSDL2_ttf -lSDL2_mixer main.cpp -o pong-cpp
 
 after this run the binary pong, if you want to move the binary to somewhere else make sure to move sound files along with it
