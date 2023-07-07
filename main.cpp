@@ -2,9 +2,9 @@
 #include "SDL2/SDL_ttf.h"
 #include "SDL2/SDL_video.h"
 #include "SDL2/SDL2_gfxPrimitives.h"
-#include "SDL2/SDL_mixer.h"
 #include "chrono"
 #include "string"
+#include "SDL2/SDL_mixer.h"
 
 const int WINDOW_HEIGHT = 720;
 const int WINDOW_WIDTH  = 1280;
@@ -151,7 +151,7 @@ class PlayerScore{
 			rect.w = width;
 			rect.h = height;
 		}
-		
+
 		~PlayerScore(){
 			SDL_FreeSurface(surface);
 			SDL_DestroyTexture(texture);

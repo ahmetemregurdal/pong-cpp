@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.7)
 project(pong-cpp)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -lSDL2 -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx")
-add_executable(pong-cpp main.cpp DejaVuSansMono.ttf WallHit.wav PaddleHit.wav)
+add_executable(pong-cpp main.cpp)
 include_directories(${SDL2_INCLUDE_DIR})
 file(COPY DejaVuSansMono.ttf DESTINATION "${CMAKE_BINARY_DIR}")
 file(COPY WallHit.wav DESTINATION "${CMAKE_BINARY_DIR}")
